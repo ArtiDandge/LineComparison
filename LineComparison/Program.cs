@@ -26,16 +26,16 @@ namespace LineComparison
             Console.WriteLine("Length of the Line 2 is :" + LengthOfLineTwo);
                        
 
-            if (LengthOfLineOne.CompareTo(LengthOfLineTwo) < 0 )
+            if ((LengthOfLineOne.CompareTo(LengthOfLineTwo)).Equals(-1) )
             {
                 Console.WriteLine("Line 1 is greater than line Line 2");
 
             }
-            else if (LengthOfLineOne.CompareTo(LengthOfLineTwo) > 0)
+            else if ((LengthOfLineOne.CompareTo(LengthOfLineTwo)).Equals(1))
             {
                 Console.WriteLine("Line 1 is greater than line Line 2");
             }
-            else if(LengthOfLineOne.CompareTo(LengthOfLineTwo) == 0)
+            else if((LengthOfLineOne.CompareTo(LengthOfLineTwo)).Equals(0))
             {
                 Console.WriteLine("Both Lines are equal");
             }
