@@ -22,16 +22,22 @@ namespace LineComparison
             LengthOfLineTwo = (Math.Sqrt((x4 - x3) * (x4 - x3)) + ((y4 - y3) * (y4 - y3)));
             Console.WriteLine("End Points for X1 is : " + x1 + " and for Y1 is : " + y1);
             Console.WriteLine("End Points for X2 is : " + x2 + " and for Y2 is : " + y2);
-            Console.WriteLine("Length of the Line is :" + LengthOfLineOne);
-            Console.WriteLine("Length of the Line is :" + LengthOfLineTwo);
-            if (LengthOfLineOne.Equals(LengthOfLineTwo))
+            Console.WriteLine("Length of the Line 1 is :" + LengthOfLineOne);
+            Console.WriteLine("Length of the Line 2 is :" + LengthOfLineTwo);
+                       
+
+            if (LengthOfLineOne.CompareTo(LengthOfLineTwo) < 0 )
             {
-                Console.WriteLine("Lines are Equal");
+                Console.WriteLine("Line 1 is greater than line Line 2");
 
             }
-            else
+            else if (LengthOfLineOne.CompareTo(LengthOfLineTwo) > 0)
             {
-                Console.WriteLine("Lines are not Equal");
+                Console.WriteLine("Line 1 is greater than line Line 2");
+            }
+            else if(LengthOfLineOne.CompareTo(LengthOfLineTwo) == 0)
+            {
+                Console.WriteLine("Both Lines are equal");
             }
         }
     }
