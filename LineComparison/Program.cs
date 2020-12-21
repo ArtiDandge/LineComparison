@@ -23,13 +23,11 @@ namespace LineComparison
             Console.WriteLine("End Points for X1 is : " + x1 + " and for Y1 is : " + y1);
             Console.WriteLine("End Points for X2 is : " + x2 + " and for Y2 is : " + y2);
             Console.WriteLine("Length of the Line 1 is :" + LengthOfLineOne);
-            Console.WriteLine("Length of the Line 2 is :" + LengthOfLineTwo);
-                       
+            Console.WriteLine("Length of the Line 2 is :" + LengthOfLineTwo);                       
 
             if ((LengthOfLineOne.CompareTo(LengthOfLineTwo)).Equals(-1) )
             {
                 Console.WriteLine("Line 1 is greater than line Line 2");
-
             }
             else if ((LengthOfLineOne.CompareTo(LengthOfLineTwo)).Equals(1))
             {
