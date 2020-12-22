@@ -27,11 +27,11 @@ namespace LineComparison
 
             if ((LengthOfLineOne.CompareTo(LengthOfLineTwo)).Equals(-1) )
             {
-                Console.WriteLine("Line 1 is greater than line Line 2");
+                Console.WriteLine("Line 1 is smaller than Line 2");
             }
             else if ((LengthOfLineOne.CompareTo(LengthOfLineTwo)).Equals(1))
             {
-                Console.WriteLine("Line 1 is greater than line Line 2");
+                Console.WriteLine("Line 1 is greater than Line 2");
             }
             else if((LengthOfLineOne.CompareTo(LengthOfLineTwo)).Equals(0))
             {
